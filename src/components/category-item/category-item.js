@@ -29,16 +29,16 @@ const CategoryItem = () => {
     },
   ];
   return (
-    <div class='categories-container'>
+    <div className='categories-container'>
       {category.map((eachItem) => {
         const { id, title, imageUrl } = eachItem;
         return (
-          <div key={id} class='category-container'>
+          <div key={id} className='category-container'>
             <div
-              class='background-image'
+              className='background-image'
               style={{ backgroundImage: `url(${imageUrl})` }}
             ></div>
-            <div class='category-body-container'>
+            <div className='category-body-container'>
               <h2>{title}</h2>
               <p>SHOP NOW</p>
             </div>
